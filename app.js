@@ -13,7 +13,7 @@ async function loadRandomPhoto() {
         await new Promise(resolve => setTimeout(resolve, 500));
         
         const orientation = getInitialOrientation();
-        const apiUrl = `https://api.unsplash.com/photos/random?client_id=${UNSPLASH_TOKEN}&query=nature&orientation=${orientation}&w=1920&h=1080`;
+        const apiUrl = `https://api.unsplash.com/photos/random?client_id=${UNSPLASH_TOKEN}&query=nature,architecture,art,street,exhibition&orientation=${orientation}&w=1920&h=1080`;
         
         const response = await fetch(apiUrl);
         const data = await response.json();
