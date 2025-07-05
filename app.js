@@ -56,4 +56,4 @@ function handleError(error) {
 
 // Инициализация
 loadRandomPhoto();
-setInterval(loadRandomPhoto, 60000);
+setInterval(loadRandomPhoto, 120000);
